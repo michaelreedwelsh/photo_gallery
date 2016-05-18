@@ -1,0 +1,144 @@
+
+/*BASIC PROPERTIES*********/
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -web-kit-box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+header {
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  -webkit-box-shadow: 0 10px 10px -6px black;
+	-moz-box-shadow: 0 10px 10px -6px black;
+	box-shadow: 0 10px 10px -6px black;
+	background-color: rgb(25, 25, 25);
+	color: white;
+	}
+	
+	header h1 {
+	    padding-top: 10px;
+	    margin: 0 auto 10px;
+	}
+header p {
+  padding-bottom: 25px;
+}
+/*GALLERY ***********/
+.gallery {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery img {
+  width: 60%;
+  display: inline-block;
+  margin: 20px;
+  border: 2px solid black;
+  
+}
+
+.gallery img:hover {
+  box-shadow: 0 0 15px black;
+  
+}
+
+.gallery a {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*OVERLAY PROPERTIES********/
+
+#overlay_img {
+  text-align: center;
+  width: 70%;
+  margin-top: 30px;
+}
+
+#overlay {
+  text-align: center;
+  display: none;
+  background-color: rgba(0, 0, 0, .6);
+  position: fixed;  
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#overlay p {
+  color: white;
+}
+
+/*FOOOOOOOTER STUFFFFF*/
+
+footer {
+  text-align: center;
+  clear: both;
+  background-color: black;
+  color: white;
+  height: 100px;
+  margin-bottom: 0;
+  width: 100%;
+  position: relative;
+  -webkit-box-shadow: 0 -20px 20px -20px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0 -20px 20px -20px rgba(0,0,0,0.8);
+    box-shadow: 0 -20px 20px -20px rgba(0,0,0,0.8);
+}
+
+footer .social_media {
+    margin: 0 auto;
+    display: block;
+}
+
+footer p {
+  padding-top: 15px;
+    text-align: middle;
+  display: inline-block;
+  margin: 0 auto;
+  
+}
+footer .social {
+    display: inline-block;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+}
+
+/*SEARCH STUFF********/
+
+form {
+  text-align: center;
+  margin: 0 auto;
+  }
+
+input {
+
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+  height: 30px;
+
+}
+input[type="submit"]{
+  width: 100px;
+  color: ;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  background-color: brown;
+  
+} 
+input[type="search"] {
+  padding-left: 10px;
+  font-weight bold;
+}
