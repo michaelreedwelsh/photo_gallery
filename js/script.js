@@ -37,12 +37,12 @@ $overlay.click(function () {
 $('#fadespot').append($fade_in_header);
 $('#fadespot').hide();
 
-$('header h1').mouseover( function (){
-   $('#fadespot').show('slow');
-   $('#fadespot').mouseout( function (){
-       $('#fadespot').hide('slow');
-   });
-});
+window.onload = function (){
+
+   $('#fadespot').delay(1000).show('slow')
+   
+   };
+
 
 
 //on mouse over reveal the header text and have it slide in
