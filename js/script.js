@@ -13,13 +13,13 @@ $("body").append($overlay);
 
 //Overlay exists but is hidden
 //Time to show the overlay!!!!
-$(".gallery a img").click(function (event) {
+$(".gallery a img").click(function () {
    event.preventDefault();
    // Capturing info on click 
    var img_location = $(this).attr("src");
    var content = $(this).attr("alt");
    // This could be cool 
-   $(this).toggle("puff");
+   $(this).effect("puff");
 
    // Showing overlay
    $overlay.delay(500).show(0);
