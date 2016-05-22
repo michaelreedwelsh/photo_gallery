@@ -47,10 +47,11 @@ window.onload = function (){
 //on mouse over reveal the header text and have it slide in
 
 // Mouseover event making the images become slightly larger
-$('.gallery a img').mouseover(function () {
-   $(this).animate({width: "62%"});
+('.gallery a img').mouseover(function () {
+   var $parentWidth = $(this).css("width");
+   $(this).animate({width: $parentWidth + "2%"});
    $(this).mouseout(function (){
-      $(this).animate({width: "60%"});
+      $(this).animate({width: $parentWidth - "2%"});
    });
    
 });

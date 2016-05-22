@@ -152,7 +152,14 @@ input[type="search"] {
 /* MEDIA QUERIES */
 
 @media(min-width: 768px) {
+  .gallery img {
+    width: 20%;
+  }
 
+  #overlay img {
+    width: 50%;
+    margin-top: 5%;
+  }
 }
 
 
