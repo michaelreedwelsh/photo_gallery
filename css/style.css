@@ -61,7 +61,7 @@ header p {
 #overlay_img {
   text-align: center;
   width: 70%;
-  margin-top: 30px;
+  margin-top: 35%;
 }
 
 #overlay {
@@ -143,3 +143,17 @@ input[type="search"] {
   padding-left: 10px;
   font-weight bold;
 }
+
+
+/* MEDIA QUERIES */
+
+@media(min-width: 768px) {
+
+}
+
+
+
+
+
+
+

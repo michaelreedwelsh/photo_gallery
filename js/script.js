@@ -57,9 +57,7 @@ $('.gallery a img').mouseover(function () {
 });
 
 // I want my social media icons to have a slight bounce when they are moused 
-$(".social").mouseover(function () {
-   $(this).toggle("explode");
-});
+
 
 
 
