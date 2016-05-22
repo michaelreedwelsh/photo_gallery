@@ -19,7 +19,6 @@ $(".gallery a img").click(function () {
    var img_location = $(this).attr("src");
    var content = $(this).attr("alt");
    // This could be cool 
-   $(this).effect("puff");
 
    // Showing overlay
    $overlay.delay(500).show(0);
