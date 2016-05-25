@@ -1,7 +1,7 @@
 
 var $overlay = $('<div id="overlay"></div>');
 var $image = $('<img id="overlay_img">');
-var $fade_in_header = "<p>Coded and Scripted by Michael Welsh</p>";
+var $fade_in_header = "<p>Coded by Michael Welsh</p>";
 var $caption = $("<p></p>");
 var $right = $("<button type='button' id='right'>Next</button>");
 var $left = $("<button type='button' id='left'>Previous</button>");
