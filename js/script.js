@@ -3,8 +3,8 @@ var $overlay = $('<div id="overlay"></div>');
 var $image = $('<img id="overlay_img">');
 var $fade_in_header = "<p>Coded by Michael Welsh</p>";
 var $caption = $("<p></p>");
-var $right = $("<button type='button' id='right'>Next</button>");
-var $left = $("<button type='button' id='left'>Previous</button>");
+var $right = $("<div id='right'>Next</div>");
+var $left = $("<div id='left'>Previous</div>");
 var $prev = $("gallery a img").prev();
 
 
