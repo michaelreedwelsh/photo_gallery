@@ -5,8 +5,7 @@ var $fade_in_header = "<p>Coded and Scripted by Michael Welsh</p>";
 var $caption = $("<p></p>");
 var $right = $("<button type='button' id='right'>Next</button>");
 var $left = $("<button type='button' id='left'>Previous</button>");
-var $prev = $("gallery a img").prev().attr("src");
-
+var $prev = $("gallery a img").prev();
 
 
 // CREATING THE OVERLAY 
@@ -42,7 +41,7 @@ $overlay.click(function () {
 
 $left.click(function () {
 
-$image.attr("src", $prevLoc);
+$overlay.append($prev);
 $overlay.show();
 
 });
@@ -65,15 +64,6 @@ window.onload = function (){
 
 //on mouse over reveal the header text and have it slide in
 
-// Mouseover event making the images become slightly larger
-('.gallery a img').mouseover(function () {
-   var $parentWidth = $(this).css("width");
-   $(this).animate({width: $parentWidth + "2%"});
-   $(this).mouseout(function (){
-      $(this).animate({width: $parentWidth - "2%"});
-   });
-   
-});
 
 // I want my social media icons to have a slight bounce when they are moused 
 
