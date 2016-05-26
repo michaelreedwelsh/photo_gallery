@@ -4,8 +4,8 @@ var $image = $('<img id="overlay_img">');
 var $fade_in_header = "<p>Coded by Michael Welsh</p>";
 var $caption = $("<p></p>");
 var $right = $("<div id='right'>Next</div>");
-var $left = $("<div id='left'>Previous</div>");
-var $prev = $("gallery a img").prev();
+var $left = $("<div id='left'>Back</div>");
+
 
 
 // CREATING THE OVERLAY 
@@ -20,15 +20,15 @@ $overlay.append($right);
 
 //Overlay exists but is hidden
 //Time to show the overlay!!!!
-$(".gallery a img").click(function () {
+$(".gallery img").click(function () {
    event.preventDefault();
    // Capturing info on click 
    var img_location = $(this).attr("src");
    var content = $(this).attr("alt");
    // This could be cool 
-
+   
    // Showing overlay
-   $overlay.delay(250).show(0);
+   $overlay.delay(500).show(0);
    // Assigning captured info to the overlay 
    $image.attr('src', img_location);
    $caption.text(content);
@@ -37,14 +37,9 @@ $(".gallery a img").click(function () {
 $overlay.click(function () {
    $overlay.hide();
 })
+
 //Now the Buttons need to do something.....
 
-$left.click(function () {
-
-$overlay.append($prev);
-$overlay.show();
-
-});
 
 
 
@@ -61,6 +56,23 @@ window.onload = function (){
 
 
 
+// adding the filter 
+//THIS FILTER IS DRIVING ME CRAZY>>....
+$('.gallery img').each(function(){
+$(this).prop('alt', $(this).prop('alt').toLowerCase());
+});
+
+$(".search-box").on("keyup", function () {
+   var searchTerm = $(this).val().toLowerCase();
+   $(".gallery img").each( function () {
+      if ( $(this).prop('alt').indexOf(searchTerm) > -1 || searchTerm.length < 1) {
+         $(this).show();
+      
+   } else {
+      $(this).hide();
+   };
+});
+})
 
 //on mouse over reveal the header text and have it slide in
 
