@@ -9,7 +9,7 @@ $('#fadespot').hide();
 
 window.onload = function (){
 
-   $('#fadespot').delay(1000).show('slow')
+   $('#fadespot').delay(1000).fadeIn(750);
    
    };
 
@@ -34,3 +34,4 @@ lightbox.option({
 	'resizeDuration': 100
 })
 
+$("header").sticky();
